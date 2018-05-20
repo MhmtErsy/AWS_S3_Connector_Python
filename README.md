@@ -7,3 +7,5 @@
 - SendFilesToBucket('<BUCKET_NAME>', '<SUB_FOLDER_IN_BUCKET>', '<MY_LOCAL_PATH>' , '<FILE_FULL_NAME_WHICH_I_SEND>')
 - DeleteDirectoryOrBucketFiles('<BUCKET_NAME>', '<SUB_FOLDER_IN_BUCKET>')
 - ListAllFilesFromBucket('<BUCKET_NAME>')
+- DownloadDataS3('<BUCKET_NAME>','<PATH_IN_S3>') (PATH_IN_S3 is optional)
+
