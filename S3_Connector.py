@@ -5,6 +5,8 @@ from os.path import join
 from boto.s3 import connect_to_region
 import boto.s3.connection
 import datetime
+# Mehmet ERSOY
+# https://github.com/MhmtErsy/AWS_S3_Connector_Python
 
 try:
     conn = connect_to_region('<region>',
