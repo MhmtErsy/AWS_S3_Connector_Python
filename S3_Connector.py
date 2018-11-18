@@ -29,7 +29,7 @@ DOWNLOAD_LOCATION_PATH = 'S3_Downloads/'
 def DeleteDirectoryOrBucketFiles(bucket_name, directory_name=None):
     bucket = conn.get_bucket(bucket_name)
     if directory_name is not None:
-        bucket_list_result_set = bucket.list(prefix="{}".format(directory_name))
+        bucket_list_result_set = bucket.list(prefix=directory_name)
     else:
         bucket_list_result_set = bucket.list()
     print("---- Following Files Will Be Delete ----")
@@ -81,7 +81,7 @@ def SendFilesToBucket(bucket_name, directory_name,local_path, keyname):
 
     
 def ListAllFilesByBucket(bucket_name):
-    bucket = conn.get_bucket('{}'.format(bucket_name))
+    bucket = conn.get_bucket(bucket_name)
     bucket_list_result_set = bucket.list()
     print("|---- BUCKET: {} ----|".format(bucket_name))
     for l in bucket_list_result_set:
