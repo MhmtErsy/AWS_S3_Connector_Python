@@ -27,7 +27,7 @@ today = today.replace(' ','-')
 DOWNLOAD_LOCATION_PATH = 'S3_Downloads/'
 
 def DeleteDirectoryOrBucketFiles(bucket_name, directory_name=None):
-    bucket = conn.get_bucket('{}'.format(bucket_name))
+    bucket = conn.get_bucket(bucket_name)
     if directory_name is not None:
         bucket_list_result_set = bucket.list(prefix="{}".format(directory_name))
     else:
