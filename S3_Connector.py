@@ -62,7 +62,7 @@ def DownloadDataS3(bucket_name, path=None):
 
             
 def SendFilesToBucket(bucket_name, directory_name,local_path, keyname):
-    bucket = conn.get_bucket('{}'.format(bucket_name))
+    bucket = conn.get_bucket(bucket_name)
     key_name = keyname
     path = directory_name
     full_key_name = join(path, key_name)
