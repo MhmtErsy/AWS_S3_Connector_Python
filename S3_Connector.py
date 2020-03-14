@@ -10,11 +10,11 @@ import datetime
 
 try:
     conn = connect_to_region('<region>',
-                                     aws_access_key_id='<access_key_id>',
-                                     aws_secret_access_key='<secret_access_key>',
-                                     host='<host>',
-                                     #is_secure=True,               # uncomment if you are not using ssl
-                                     calling_format=boto.s3.connection.OrdinaryCallingFormat(),)
+			aws_access_key_id='<access_key_id>',
+			aws_secret_access_key='<secret_access_key>',
+			host='<host>',
+			#is_secure=True,               # uncomment if you are not using ssl
+			calling_format=boto.s3.connection.OrdinaryCallingFormat(),)
 except Exception, e:
     logging.error('Failed: '+str(e))
 
