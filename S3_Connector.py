@@ -89,8 +89,9 @@ def ListAllFilesByBucket(bucket_name):
         print(key_string)
 
 
-
-#SendFilesToBucket('<BUCKET_NAME>', '<SUB_FOLDER_IN_BUCKET>', '<MY_LOCAL_PATH>' , '<FILE_FULL_NAME_WHICH_I_SEND>')
-#DeleteDirectoryOrBucketFiles('<BUCKET_NAME>', '<SUB_FOLDER_IN_BUCKET>')
-#ListAllFilesByBucket('<BUCKET_NAME>')
-#DownloadDataS3('<BUCKET_NAME>','<PATH_IN_S3>') (Path is optional)
+if __name__ == '__main__':
+    pass
+    #SendFilesToBucket('<BUCKET_NAME>', '<SUB_FOLDER_IN_BUCKET>', '<MY_LOCAL_PATH>' , '<FILE_FULL_NAME_WHICH_I_SEND>')
+    #DeleteDirectoryOrBucketFiles('<BUCKET_NAME>', '<SUB_FOLDER_IN_BUCKET>')
+    #ListAllFilesByBucket('<BUCKET_NAME>')
+    #DownloadDataS3('<BUCKET_NAME>','<PATH_IN_S3>') (Path is optional)
